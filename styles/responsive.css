@@ -1,0 +1,153 @@
+@media screen and (max-width: 370px) {
+    .header-content__title{
+        font-size: 4rem;
+    }
+    .header-content__caption{
+        font-size: 1.4rem;
+    }
+    .destinations__title{
+        font-size: 2.3rem;
+    }
+    .newsletter__title{
+        max-width: 16rem;
+    }
+    .newsletter::before {
+        width: 50rem;
+        height: 50rem;
+        top: 16rem;
+        left: -22rem;
+        background-size: contain;
+        background-position: center left;
+    }
+}
+@media screen and (min-width: 370px) {
+    .newsletter::before{
+        width: 70rem;
+        height: 70rem;
+        top: 1rem;
+        left: -36rem;
+        background-size: contain;
+        background-position: center left;
+    }
+}
+@media screen and (max-width: 575px) {
+    .destinations::after,
+    .destinations::before{
+        width: 25rem;
+        height: 25rem;
+    }
+    .destinations::before{
+        left: -8rem;
+        top: 280rem;
+    }
+    .destinations::after{
+        right: 0;
+        top: 15rem;
+    }
+}
+@media screen and (min-width: 576px) {
+    .newsletter::before{
+        width: 100rem;
+        height: 100rem;
+        top: -8rem;
+        left: -52rem;
+        background-size: contain;
+        background-position: center left;
+    }
+}
+@media screen and (min-width: 768px) {
+    .nav__btn, .nav-menu{
+        display: none;
+    }
+    .menu{
+        display: flex;
+    }
+    .nav__links{
+        display: none;
+    }
+    .newsletter{
+        flex-direction: row-reverse;
+        justify-content: space-between;
+        align-items: center;
+        text-align: left;
+    }
+    .newsletter__banner{
+        flex-basis: 45%;
+    }
+    .newsletter__content{
+        flex-basis: 55%;
+        margin-top: 0;
+        padding-right: 3rem;
+    }
+    .newsletter::before{
+        top: -40rem;
+        left: -35rem;
+    }
+}
+@media screen and (min-width: 992px) {
+    .nav__links{
+        display: block;
+    }
+    .header-content__caption{
+        max-width: 45rem;
+    }
+    .newsletter__content{
+        padding-right: 12rem;
+    }
+    .footer__wrapper{
+        display: flex;
+    }
+    .footer__left{
+        max-width: 45rem;
+    }
+    .footer__right{
+        margin-top: 0;
+    }
+    .footer-app{
+        display: block;
+    }
+    .footer-app--mobile{
+        display: none;
+    }
+    .footer__scroll{
+        right: 0;
+        left: auto;
+    }
+    .footer-list{
+        width: 18rem;
+        margin-bottom: 0;
+    }
+    .newsletter::before{
+        left: -50rem;
+    }
+}
+@media screen and (min-width: 1200px) {
+    .header{
+        min-height: 60rem;
+    }
+    .newsletter__title{
+        margin-bottom: 0;
+    }
+    .newsletter__banner{
+        flex-basis: auto;
+        width: 42rem;
+    }
+    .newsletter__content{
+        flex-basis: auto;
+        width: 60rem;
+    }
+    .footer__wrapper{
+        justify-content: space-between;
+    }
+    .newsletter::before{
+        left: -35rem;
+    }
+}
+@media screen and (min-width: 1400px) {
+    .newsletter{
+        padding: 3rem 6rem;
+    }
+    .newsletter::before{
+        left: -15rem;
+    }
+}
